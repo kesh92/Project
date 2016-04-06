@@ -10,9 +10,9 @@
       "get" : {
         "summary" : "Hello",
         "description" : true,
-        "parameters" : {
-          "-name" : "Street Name"
-        },
+        "parameters" : [ {
+          "name" : "Street Name"
+        } ],
         "responses" : {
           "200" : {
             "description" : "pretty good"
