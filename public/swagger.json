@@ -11,7 +11,9 @@
         "summary" : "Hello",
         "description" : true,
         "parameters" : [ {
-          "name" : "Street Name"
+          "name" : "Street Name",
+          "in" : "query",
+          "type" : "string"
         } ],
         "responses" : {
           "200" : {
