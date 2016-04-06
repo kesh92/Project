@@ -5,5 +5,20 @@
     "title" : "The test API",
     "description" : "Basically playing around with some API sepcsss"
   },
-  "paths" : ""
+  "paths" : {
+    "/get" : {
+      "get" : {
+        "summary" : "Hello",
+        "description" : true,
+        "parameters" : {
+          "-name" : "Street Name"
+        },
+        "responses" : {
+          "200" : {
+            "description" : "pretty good"
+          }
+        }
+      }
+    }
+  }
 }
