@@ -9,7 +9,7 @@
     "/get" : {
       "get" : {
         "summary" : "Hello",
-        "description" : true,
+        "description" : "Yeslll",
         "parameters" : [ {
           "name" : "Street Name",
           "in" : "query",
