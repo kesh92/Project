@@ -1,0 +1,22 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1",
+    "title" : "Take me home",
+    "description" : "Blah Blah"
+  },
+  "paths" : {
+    "/getHello" : {
+      "get" : {
+        "parameters" : [ {
+          "name" : "YYY",
+          "in" : "query",
+          "required" : true
+        }, {
+          "name" : "city",
+          "in" : "query"
+        } ]
+      }
+    }
+  }
+}
