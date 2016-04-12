@@ -7,21 +7,18 @@ import io.swagger.client.core.ApiKeyLocations._
 object DefaultApi {
 
   /**
-   * 
+   * yupo
    * 
    * Expected answers:
-   *   code 200 :  (Lists)
+   *   code 200 :  (OK)
    * 
-   * @param ids ID
-   * @param `new` ID
+   * @param firstname Enter the first name of the person you wish to find
    */
-  def testPathIdsNewGet(ids: String, `new`: String): ApiRequest[Unit] =
-    ApiRequest[Unit](ApiMethods.GET, "https://localhost", "/test-path/{ids}/{new}", "application/json")
-      .withPathParam("ids", ids)
-      .withPathParam("new", `new`)
+  def getGet(firstname: String): ApiRequest[Unit] =
+    ApiRequest[Unit](ApiMethods.GET, "https://localhost", "/get", "application/json")
+      .withQueryParam("firstname", firstname)
       .withSuccessResponse[Unit](200)
       
-
 
 }
 
