@@ -1,0 +1,28 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0.0",
+    "title" : "The test API",
+    "description" : "Basically playing around with some API sepcsss"
+  },
+  "paths" : {
+    "/get" : {
+      "get" : {
+        "summary" : "Hello",
+        "description" : "Yeslll",
+        "parameters" : [ {
+          "name" : "Street Name",
+          "in" : "query",
+          "type" : "string"
+        }, {
+          "$ref" : "https://api.swaggerhub.com/domains/kesh92/Domain1/1#/parameters/generalParam"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "pretty good"
+          }
+        }
+      }
+    }
+  }
+}
