@@ -36,6 +36,9 @@
       "properties" : {
         "name" : {
           "type" : "string"
+        },
+        "Birthday" : {
+          "type" : "string"
         }
       }
     }
