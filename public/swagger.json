@@ -8,19 +8,34 @@
   "paths" : {
     "/get" : {
       "get" : {
-        "summary" : "Hello",
-        "description" : "Yeslll",
+        "summary" : "Hello, hello, is there anybody in there?",
+        "description" : "Standard_Description",
         "parameters" : [ {
           "name" : "Street Name",
           "in" : "query",
           "type" : "string"
         }, {
-          "$ref" : "https://api.swaggerhub.com/domains/kesh92/Domain1/1#/parameters/generalParam"
+          "name" : "City",
+          "in" : "query",
+          "type" : "string"
         } ],
         "responses" : {
           "200" : {
-            "description" : "pretty good"
+            "description" : "pretty good, you just made it",
+            "schema" : {
+              "$ref" : "#/definitions/Definition1"
+            }
           }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "Definition1" : {
+      "type" : "object",
+      "properties" : {
+        "name" : {
+          "type" : "string"
         }
       }
     }
