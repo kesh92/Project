@@ -1,0 +1,42 @@
+---
+swagger: "2.0"
+info:
+  description: "Yup, learning YAML. "
+  version: "1"
+  title: "It's time to go back to school"
+paths:
+  /getHello:
+    get:
+      summary: "It's for us"
+      description: "It'summary"
+      parameters:
+      - name: "nickname"
+        in: "query"
+        description: "It's the name of the person you wanna know more about"
+        required: true
+        type: "string"
+      - name: "weight"
+        in: "query"
+        description: "It's a weight in kilos/lbs"
+        required: true
+        type: "number"
+      responses:
+        200:
+          description: "It's working again!"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Kesh"
+securityDefinitions:
+  api_key:
+    type: "apiKey"
+    name: "keshav_token"
+    in: "header"
+definitions:
+  Kesh:
+    type: "object"
+    properties:
+      name:
+        type: "string"
+      weight:
+        type: "integer"
