@@ -26,7 +26,7 @@ import javax.ws.rs.*;
 
 
 @io.swagger.annotations.Api(description = "the get API")
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaJerseyServerCodegen", date = "2016-04-18T18:27:20.561Z")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaJerseyServerCodegen", date = "2016-04-18T18:27:21.541Z")
 public class GetApi  {
    private final GetApiService delegate = GetApiServiceFactory.getGetApi();
 
