@@ -17,7 +17,7 @@ import com.sun.jersey.multipart.FormDataParam;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.SecurityContext;
 
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaJerseyServerCodegen", date = "2016-04-18T18:26:17.780Z")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaJerseyServerCodegen", date = "2016-04-18T18:26:34.500Z")
 public abstract class GetApiService {
       public abstract Response getGet(String firstname,SecurityContext securityContext)
       throws NotFoundException;
