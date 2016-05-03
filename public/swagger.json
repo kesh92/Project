@@ -1,46 +1,29 @@
 {
   "swagger" : "2.0",
   "info" : {
-    "version" : "1",
-    "title" : "It's time to go back to school",
-    "description" : "Yup, learning YAML. "
+    "version" : "1.0.0",
+    "title" : "The test API",
+    "description" : "Basically playing around with some API sepcsss"
   },
-  "securityDefinitions" : {
-    "api_key" : {
-      "type" : "apiKey",
-      "name" : "keshav_token",
-      "in" : "header"
-    }
-  },
-  "security" : [ {
-    "api_key" : [ ]
-  } ],
   "paths" : {
-    "/getHello" : {
+    "/get" : {
       "get" : {
-        "summary" : "It's for us",
-        "description" : "It'summary",
+        "summary" : "Hello, hello, is there anybody in there?",
+        "description" : "Standard_Description",
         "parameters" : [ {
-          "name" : "nickname",
-          "type" : "string",
+          "name" : "Street Name",
           "in" : "query",
-          "required" : true,
-          "description" : "It's the name of the person you wanna know more about"
+          "type" : "string"
         }, {
-          "name" : "weight",
-          "type" : "number",
+          "name" : "City",
           "in" : "query",
-          "required" : true,
-          "description" : "It's a weight in kilos/lbs"
+          "type" : "string"
         } ],
         "responses" : {
           "200" : {
-            "description" : "It's working again!",
+            "description" : "pretty good, you just made it",
             "schema" : {
-              "type" : "array",
-              "items" : {
-                "$ref" : "#/definitions/Kesh"
-              }
+              "$ref" : "#/definitions/Definition1"
             }
           }
         }
@@ -48,14 +31,14 @@
     }
   },
   "definitions" : {
-    "Kesh" : {
+    "Definition1" : {
       "type" : "object",
       "properties" : {
         "name" : {
           "type" : "string"
         },
-        "weight" : {
-          "type" : "integer"
+        "Birthday" : {
+          "type" : "string"
         }
       }
     }
