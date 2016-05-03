@@ -15,7 +15,7 @@
           "in" : "query",
           "type" : "string"
         }, {
-          "name" : "City",
+          "name" : "City22",
           "in" : "query",
           "type" : "string"
         } ],
