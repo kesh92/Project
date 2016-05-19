@@ -1,0 +1,40 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1",
+    "title" : "Take me home",
+    "description" : "Blah Blah"
+  },
+  "schemes" : [ "https" ],
+  "host" : "www.example.com",
+  "basePath" : "/SmartBear",
+  "paths" : {
+    "/Doc" : {
+      "get" : {
+        "summary" : "A basic API call",
+        "description" : "Lists the members of the doc team based on location",
+        "parameters" : [ {
+          "name" : "Location",
+          "type" : "string",
+          "in" : "query"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Returns the list based on input",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "required" : [ "firstName" ],
+                "properties" : {
+                  "firstName" : {
+                    "type" : "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
