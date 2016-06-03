@@ -6,6 +6,8 @@
     "description" : "Blah Blah"
   },
   "schemes" : [ "https" ],
+  "host" : "www.example.com",
+  "basePath" : "/SmartBear",
   "paths" : {
     "/Doc" : {
       "get" : {
@@ -34,7 +36,5 @@
         }
       }
     }
-  },
-  "host" : "virtserver.swaggerhub.com",
-  "basePath" : "/kesh92/Country_Roads/1"
+  }
 }
